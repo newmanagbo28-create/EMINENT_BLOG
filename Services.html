@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="IMAGES/logo.jpg">
+    <title> EMINIQ GLOBAL VENTURES WEBSITE</title>
+    <meta charset="UTF-8">
+</head>
+<body background="IMAGES/showcase.png">
+<div id="top">
+   <center><img class="myImage" src="IMAGES/logo.jpg" width="100px" height="95px" alt="Logo"></center>
+    <center><h1>EMINIQ GLOBAL VENTURES</h1>
+        <div id="nav">
+            
+                <a href="WEBSITE.html">Home |</a>
+                <a href="About_Us.html">About Us |</a>
+                <a href="Services.html">Services</a>
+                <br>
+                
+            </div>
+        </div>
+        
+<br>
+<center>
+<input placeholder="Search the Web...">
+<button type="submit" name="search" color="blue">Search </button>
+<br><br>    
+<h3>OUR SERVICES:</h3>
+
+<fieldset>
+
+<div class="slider-container">
+    <div class="image-box">
+        <img id="img1" src="IMAGES/image1.jpg">
+    </div>
+    <div class="image-box">
+        <img id="img2" src="IMAGES/image2.jpg">
+    </div>
+</div>
+</fieldset>
+<script>
+const images = [
+    "IMAGES/image1.jpg",
+    "IMAGES/image2.jpg",
+    "IMAGES/image3.gif",
+    "IMAGES/image4.jpg",
+    "IMAGES/image5.jpg",
+    "IMAGES/image6.jpg",
+    "IMAGES/image7.jpg",
+    "IMAGES/image8.jpg",
+    "IMAGES/image9.png",
+    "IMAGES/image10.png"
+];
+let index = 0;
+const img1 = document.getElementById("img1");
+const img2 = document.getElementById("img2");
+function changeImages(){
+    // Fade out
+    img1.classList.add("fade-out");
+    img2.classList.add("fade-out");
+    setTimeout(() => {
+        // Change images
+        img1.src = images[index];
+        img2.src = images[(index + 1) % images.length];
+        // Fade in
+        img1.classList.remove("fade-out");
+        img2.classList.remove("fade-out");
+        // Move by 2 images
+        index = (index + 2) % images.length;
+    }, 1500);
+}
+// Change every 5 seconds
+setInterval(changeImages, 5000);
+</script>
+<p> Get access to our EXCLUSIVE offers at discounted price: </p>
+<h3> GRAPHICS DESIGNS, WEBSITE DEVELOPMENT and MANY MORE....</h3>
+<footer>
+    <p>To gain access to our <strong>EXCLUSIVE</strong> services click the <strong>get STARTED</strong>
+    button below to register as a user:</p> <br>
+   <a href="EMINIQ_CUSTOMER_INFO.html"> <button class="get-started-btn">
+    GET STARTED
+</button> </a>
+
+</footer>
+
+
+</html>
