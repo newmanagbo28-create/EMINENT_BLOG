@@ -203,7 +203,7 @@ legend{
 @media(max-width:950px){
 
     body{
-        background: linear-gradient, to right, 80% purple, black;
+        background: purple;
     }
 
     header {
