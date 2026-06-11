@@ -203,7 +203,7 @@ legend{
 @media(max-width:950px){
 
     body{
-        background:  rgb(255, 110, 255);
+        background: linear-gradient(to right, rgb(255, 110, 255), black);
         margin: 0 auto;
     }
 
