@@ -204,6 +204,7 @@ legend{
 
     body{
         background: linear-gradient, to right, purple, black;
+        margin: 0 auto;
     }
 
     header {
@@ -224,3 +225,5 @@ legend{
 }
 footer {
     width:100%;
+    margin: 0 auto;
+}
