@@ -130,6 +130,7 @@ button{
     border: 5px solid white;
     border-radius: 50%;
     box-shadow: 5px 5px 3px 1px #000000, inset 0 0 2px 1px #ddd; ;
+    object-fit:cover;
 }
 fieldset{
     background: #2b001a;
